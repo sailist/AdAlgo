@@ -1,5 +1,7 @@
 # 高级算法
 
+欢迎参考和优化
+
  - [归并算法复杂度](https://sailist.github.io/AdAlgo/doc/1.html)
  - [广义划分问题归约](https://sailist.github.io/AdAlgo/doc/2.html)
  - [X3C-Y](https://sailist.github.io/AdAlgo/doc/3.html)
