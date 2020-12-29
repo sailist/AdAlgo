@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&#x56FE;&#x7075;&#x673A;</title>
+        <style>
+</style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="图灵机">图灵机</h1>
+<p>直观地看，图灵机是由一条两端可无限延长的带子、一个读写头以及一组控制读写头工作的命令组成，如下图：</p>
+<p><img src="file:///e:\Grads\研一\算法设计与分析\解析\AdAlgo\turing\fig\1.jpg" alt=""></p>
+<p>读写头可以沿带子方向左右移动，并可以在每个方格上进行读写。其中带子上所有可能的字符构成输入集合，机器能够写到带子上的所有可能的字符构成输出集合；此外，机器自身还有一系列状态（最简单的，如启动、关闭两个状态）；最后，机器通过输入来控制向左还是向右移动一格（或是不动），以及通过输入来控制机器的输出（更改带子上的内容）和下一个时刻所处的状态。</p>
+<p>换句话表示，图灵机可以被看成是一个函数：根据输入和函数的定义来得到输出。</p>
+<p>其中，输入是当前纸带的内容和机器的状态；输出是机器的下一个状态、下一个位置（向左、向右、不移动）和纸带方格的输出。机器内部存在一个状态转移函数来定义这一从输入到输出的映射。</p>
+<p>这里的函数是普通函数的概念，请不要将其概念神话：函数的实质是一个多对一的映射。只不过在这里，输入是二维的值，输出是三维的纸，且和平常的数字脱离了。</p>
+<h2 id="停机">停机</h2>
+<p>考虑图灵机在什么情况下停机。一般编写程序，其退出的原因有两个：执行成功、产生错误。这同样适用于图灵机。当图灵机启动时，通过输入不断的更改自己的下一个状态，永不停歇，直到状态切换到了停机状态。</p>
+<p>一般而言，分别为“执行成功”、“产生错误”两个概念定义停机的状态集，一般分别称其为<strong>接受状态集</strong>和<strong>拒绝状态集</strong>，他们都是一个图灵机的状态集合的子集，当处于这两个集合之外的状态时，图灵机不会停止运行。</p>
+<h2 id="问题">问题</h2>
+<p>我们可以构造出一组输入集、输出集、状态转移函数来求解特定的问题，当定义好求解一类问题的图灵机时，问题的实例 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span></span></span></span> 就可以以纸带的形式放到图灵机上，随后根据图灵机的一系列状态转移、输出，最终停机。</p>
+<p>实际上，虽然图灵机已经是一种对求解算法问题的抽象描述了，但还可以更简单和抽象一些。实际上，输入</p>
+
+    </body>
+    </html>
