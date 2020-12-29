@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&#x54C8;&#x5BC6;&#x987F;&#x56DE;&#x8DEF;&#x95EE;&#x9898;</title>
+        <style>
+</style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="哈密顿回路问题">哈密顿回路问题</h1>
+<p>在一个无向图中，寻找一条从给定的起点到给定的终点沿途恰好经过所有其他城市一次的路径。如果存在，则该路径被称为哈密顿路径/通路。</p>
+<p><strong>闭合的哈密顿路径</strong>称作<strong>哈密顿回路（Hamiltonian cycle, HC）</strong></p>
+<p><strong>具有哈密顿回路的图</strong>称为哈密顿图，<em>具有哈密顿通路但不具有哈密顿回路的图称为半哈密顿图</em>。</p>
+<p>这个问题和著名的七桥问题的不同之处在于，<strong>过桥只需要确定起点，而不用确定终点</strong>。哈密顿问题寻找一条从给定的起点到给定的终点沿 途恰好经过所有其他城市一次的路径。</p>
+<p>平凡图是哈密顿图。</p>
+<h1 id="问题难度">问题难度</h1>
+<p>寻找哈密顿路径是一个典型的NP-完全问题。后来人们也证明了，找一条哈密顿路的近似比为常数的近似算法也是NP-完全的。</p>
+<hr>
+<h1 id="哈密尔顿图的图论定义">哈密尔顿图的图论定义</h1>
+<p>G=(V,E)是一个图，若G中一条通路通过且仅通过每一个顶点一次，称这条通路为哈密尔顿通路。若G中一个圈通过且仅通过每一个顶点一次，称这个圈为哈密尔顿圈。若一个图存在哈密尔顿圈，就称为哈密尔顿图。</p>
+<h2 id="哈密尔顿图的必要条件">哈密尔顿图的必要条件</h2>
+<p>若G=(V,E) 是一个哈密尔顿图，则对于V的每一个非空子集S，均有W(G－S) ≤|S|。其中|S|是S中的顶点数，W(G－S)表示图G擦去属于S中的顶点后，剩下子图的连通分枝的个数。</p>
+<h2 id="哈密尔顿图的充分条件">哈密尔顿图的充分条件</h2>
+<p>设 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mo stretchy="false">(</mo><mi>V</mi><mo separator="true">,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">G=(V,E)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span>是一个无向简单图，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>V</mi><mi mathvariant="normal">∣</mi><mo>=</mo><mi>n</mi><mo separator="true">,</mo><mi>n</mi><mo>≥</mo><mn>3.</mn></mrow><annotation encoding="application/x-tex">|V|=n, n≥3.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8304100000000001em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span><span class="mord">.</span></span></span></span> 若对于任意的两个顶点u，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mtext>∊</mtext><mi>V</mi><mtext>，</mtext><mi>d</mi><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo><mo>+</mo><mi>d</mi><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo><mo>≥</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">v∊V，d(u)+d(v) ≥n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord">∊</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord cjk_fallback">，</span><span class="mord mathdefault">d</span><span class="mopen">(</span><span class="mord mathdefault">u</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">d</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>，那么, G是哈密尔顿图。此条件由美国图论数学家奥勒在1960年给出。</p>
+
+    </body>
+    </html>
