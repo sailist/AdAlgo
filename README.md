@@ -17,10 +17,10 @@
 
 ## 图论/离散基础
 
- - 平面图[]
- - 哈密顿图
- - 独立集
- - 对集/匹配（matching）
+ - [平面图](./GraphTheory/1.md)
+ - [哈密顿图](./GraphTheory/2.md)
+ - [独立集](./GraphTheory/3.md)
+ - [对集/匹配（matching）](./GraphTheory/4.md)
 
 
 ## 算法分析技术
