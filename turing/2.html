@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>&#x786E;&#x5B9A;&#x578B;&#x56FE;&#x7075;&#x673A;&#xFF08;Deterministic Turing machine&comma; DTM&#xFF09;</title>
+        <title>&#x786E;&#x5B9A;&#x6027;&#x56FE;&#x7075;&#x673A;&#xFF08;Deterministic Turing machine&comma; DTM&#xFF09;</title>
         <style>
 </style>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
@@ -24,13 +24,14 @@
         
     </head>
     <body class="vscode-body vscode-light">
-        <h1 id="确定型图灵机deterministic-turing-machine-dtm">确定型图灵机（Deterministic Turing machine, DTM）</h1>
-<p>确定型图灵机指每一步都惟一确定的图灵机。</p>
+        <h1 id="确定性图灵机deterministic-turing-machine-dtm">确定性图灵机（Deterministic Turing machine, DTM）</h1>
+<p>确定性图灵机指每一步都惟一确定的图灵机。</p>
 <p>设 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span> 为一个图灵机，则只要给 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span> 一个输入，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span> 便会以一种唯一确定的方式进行运行。</p>
 <p>这实际上就是正常的图灵机，也即如之前<a href="./1.html">图灵机</a>定义的，内部是一个映射<strong>函数</strong>，一个输入只对应一个输出。确定型图灵机概念的提出是为了引出非确定性图灵机（NTM）</p>
 <h1 id="非确定性图灵机non-deterministic-turing-machine-ntm">非确定性图灵机（Non-deterministic Turing machine, NTM）</h1>
 <p>非确定性图灵机可以被想象为在同一时刻能够独立、并行地完成多种运算，一个输入可能会存在多个输出（表现在转移函数的多值性），这显然不现实，<strong>因为函数不可能出现一对多或者多对多的映射</strong>。</p>
 <p>为了实现（或者假想出）这种可能，可以通过<strong>允许不受限制的并行运算</strong>来形象的解释这种不确定性算法。每当要作某种选择（一对多的映射）时，算法就好像给自己复制了若干副本，每个副本选择一个可能性，于是，许多副本同时被执行。第一个获得成功的副本将引起对其它副本计算的结束（当然，如果一个副本结束时候没有成功，则只有该副本被终止）。</p>
+<p>注意非确定型图灵机</p>
 
     </body>
     </html>
