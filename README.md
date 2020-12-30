@@ -11,6 +11,7 @@
  - [独立集](./GraphTheory/3.html)
  - [对集/匹配（matching）](./GraphTheory/4.html)
  - [补图](./GraphTheory/5.html)
+ - [二分图](GraphTheory/bg.html)
 
 
 ## 算法分析设计
@@ -32,6 +33,7 @@
 ## NPC 问题证明（按照归约顺序额排序）
 
  - [SAT（布尔可满足性问题，Cook定理）](./doc/sat.html)
+
 ---
 
  - [ ] [3DM（三对集问题）](doc/3dm.html)
@@ -44,12 +46,12 @@
    - [最大独立集问题](doc/ivs.html)
      - [团问题](doc/clique.html)
        - [子图同构问题](doc/sgi.html)
-       - [ ] 最小迟序排工问题
+       - [最小迟序排工问题](doc/mds.html)
  - [ ] [HC（哈密顿回路问题）](doc/hc.html)
  - [划分问题](./doc/par.html)
    - [广义划分问题归约](./doc/2.html)
    - [ ] 背包问题
-   - [ ] 区间排工问题
+   - [区间排工问题](./doc/swi.html)
  - [ ] 多任务排工问题
  - [ ] 任意图三着色
    - [ ] 顶点度不超过4的图的三着色
@@ -68,7 +70,7 @@
    - [ ] 最小迟序排工问题
 
 ## 其他
- - [ ] 2SAT 问题
+ - [ ] [2SAT 问题](doc/2sat.html)
 
 ## 近似算法
  - [ ] 装箱问题 
