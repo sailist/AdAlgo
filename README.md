@@ -42,7 +42,7 @@
    - [ ] 最小测试集问题
  - [VC（顶点覆盖问题）](doc/vc.html)
    - [最大独立集问题](doc/ivs.html)
-     - [ ] [团问题](doc/clique.html)
+     - [团问题](doc/clique.html)
        - [子图同构问题](doc/sgi.html)
        - [ ] 最小迟序排工问题
  - [ ] [HC（哈密顿回路问题）](doc/hc.html)
