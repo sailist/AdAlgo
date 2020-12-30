@@ -57,9 +57,9 @@
 </li>
 <li><a href="./turing/4.html">P/NP/NPC</a></li>
 </ul>
-<h2 id="npc-问题证明按照归约顺序额排序">NPC 问题证明（按照归约顺序额排序）</h2>
+<h2 id="npc-问题证明按照归约顺序排序">NPC 问题证明（按照归约顺序排序）</h2>
 <ul>
-<li><a href="./doc/sat.html">SAT（布尔可满足性问题，Cook定理）</a></li>
+<li><a href="doc/sat.html">SAT（布尔可满足性问题，Cook定理）</a></li>
 </ul>
 <hr>
 <ul class="contains-task-list">
@@ -67,7 +67,7 @@
 <ul class="contains-task-list">
 <li><a href="doc/x3c.html">X3C</a>
 <ul>
-<li><a href="./doc/3.html">X3C-Y</a></li>
+<li><a href="doc/3.html">X3C-Y</a></li>
 </ul>
 </li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 划分三角形问题</li>
@@ -90,27 +90,21 @@
 </ul>
 </li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <a href="doc/hc.html">HC（哈密顿回路问题）</a></li>
-<li><a href="./doc/par.html">划分问题</a>
+<li><a href="doc/par.html">划分问题</a>
 <ul class="contains-task-list">
-<li><a href="./doc/2.html">广义划分问题归约</a></li>
+<li><a href="doc/2.html">广义划分问题归约</a></li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 背包问题</li>
-<li><a href="./doc/swi.html">区间排工问题</a></li>
+<li><a href="doc/swi.html">区间排工问题</a></li>
 </ul>
 </li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 多任务排工问题</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 任意图三着色
-<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 顶点度不超过4的图的三着色</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 平面图三着色</li>
-</ul>
-</li>
 </ul>
 <h2 id="npc-问题证明按照证明方法排序">NPC 问题证明（按照证明方法排序）</h2>
 <ul class="contains-task-list">
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 限制技术
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <a href="./doc/mc.html">最小集合覆盖问题</a></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <a href="./doc/sgi.html">子图同构问题</a></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <a href="doc/mc.html">最小集合覆盖问题</a></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <a href="doc/sgi.html">子图同构问题</a></li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 背包问题</li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 多任务排工问题</li>
 </ul>
@@ -118,18 +112,44 @@
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 局部替换技术
 <ul class="contains-task-list">
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 划分三角形问题</li>
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 区间排工问题</li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <a href="doc/swi.html">区间排工问题</a></li>
 </ul>
 </li>
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 分支设计技术
-<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> 最小迟序排工问题</li>
+<ul>
+<li><a href="doc/mds.html">最小迟序排工问题</a></li>
 </ul>
 </li>
 </ul>
+<h2 id="npc-问题证明按照证明难度排序">NPC 问题证明（按照证明难度排序）</h2>
+<p>以下为分级后的题目难度，可能略有出入：</p>
+<ul>
+<li>0分</li>
+<li>1分</li>
+<li>2分</li>
+<li>3分</li>
+<li>4分</li>
+<li>5分</li>
+</ul>
+<p>难度分级按照 0-5 分评级：</p>
+<ul>
+<li>0分：绝对无任何难度的，一般由等价问题直接归约</li>
+<li>1分：非绝对无难度的，不能说一点难度没有，但也不能认为有多少难度，仅能依靠非0分的状态在坐标中定位，这种暧昧的状态被定为 1分，一般由有限步易得条件推导得到</li>
+<li>2分：有难度的最低值，但无法对其强弱进行判定，有难度的最低测度。一般是证明存在一定篇幅，但相对理解可以通过举例较为容易的理解的规约。</li>
+<li>3分：很标准的难，一般是需要大段描述，且中间穿插多个定理，但推演逻辑相对单一线性，且能够通过更简单的描述理解思想的规约的规约。</li>
+<li>4分：标准之上的难，缺少可以可视化的例子，且符号很多，只能通过硬核的推导来结束证明。</li>
+<li>5分：具有侵略性的难。目前仍然未被证明的难题。</li>
+</ul>
+<p>该评级策参照某定标法略做更改而来，具体链接已经找不到了。</p>
 <h2 id="其他">其他</h2>
 <ul class="contains-task-list">
 <li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <a href="doc/2sat.html">2SAT 问题</a></li>
+<li><a href="doc/gcp.html">图着色问题</a>
+<ul class="contains-task-list">
+<li><a href="doc/4gcp.html">顶点度不超过4的图的三着色</a></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox"> <a href="doc/pgcp.html">平面图三着色</a></li>
+</ul>
+</li>
 </ul>
 <h2 id="近似算法">近似算法</h2>
 <ul class="contains-task-list">
