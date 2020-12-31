@@ -17,7 +17,7 @@
 ## 算法分析设计
  - [ ] 复杂度分析
  - [ ] 分治
-   - [归并算法](https://sailist.github.io/AdAlgo/doc/1.html)
+   - [归并算法](algo/1.html)
  - [ ] 贪心
  - [ ] 动规
    - 划分问题
@@ -34,21 +34,25 @@
  - [多项式归约和图灵归约](turing/5.html)
 ## NPC 问题证明（按照归约顺序排序）
 
- - [SAT（布尔可满足性问题，Cook定理）](doc/sat.html)
+列表项中带有 未完成 符号的为只描述了问题，没有说明具体证明过程的；带有 完成 符号的为描述了问题和核心解决思路，但省略了具体证明过程的；没有符号的为同时包含了问题和具体证明过程，部份添加了核心思路的。
+
+ - [x] [SAT（布尔可满足性问题，Cook定理）](doc/sat.html)
 
 ---
 
  - [ ] [3DM（三对集问题）](doc/3dm.html)
    - [X3C](doc/x3c.html)
      - [X3C-Y](doc/3.html)
+     - [最小集合覆盖问题](doc/mc.html)
    - [ ] 划分三角形问题
    - [ ] 划分三角形
    - [ ] 最小测试集问题
- - [VC（顶点覆盖问题）](doc/vc.html)
-   - [最大独立集问题](doc/ivs.html)
-     - [团问题](doc/clique.html)
-       - [子图同构问题](doc/sgi.html)
-       - [最小迟序排工问题](doc/mds.html)
+ - [3SAT](doc/3sat.html)
+   - [VC（顶点覆盖问题）](doc/vc.html)
+     - [最大独立集问题](doc/ivs.html)
+       - [团问题](doc/clique.html)
+         - [子图同构问题](doc/sgi.html)
+         - [最小迟序排工问题](doc/mds.html)
  - [ ] [HC（哈密顿回路问题）](doc/hc.html)
    - [TSP（货郎问题）](doc/tsp.html)
  - [划分问题](doc/par.html)
@@ -60,10 +64,10 @@
 
 ## NPC 问题证明（按照证明方法排序）
  - [ ] 限制技术
-   - [ ] [最小集合覆盖问题](doc/mc.html)
-   - [ ] [子图同构问题](doc/sgi.html)
-   - [ ] 背包问题
-   - [ ] 多任务排工问题
+   - [最小集合覆盖问题](doc/mc.html)
+   - [子图同构问题](doc/sgi.html)
+   - [背包问题](doc/knapsack.html)
+   - [多任务排工问题](doc/mts.html)
  - [ ] 局部替换技术
    - [ ] 划分三角形问题
    - [ ] [区间排工问题](doc/swi.html)
@@ -102,7 +106,7 @@
  - [MST-MM](approx/mstmm.html)
 
 
-
+ 
 
 
 # 山软智库
