@@ -16,7 +16,7 @@ $\sigma(t)+L(t) \leqslant \sigma\left(t^{\prime}\right)$
 
 该问题的求解可以通过将 [划分问题](par.html) 归约到该问题证明。
 
-# NPC 证明
+## NPC 证明
 
 根据划分问题实例 $A=\{a_1,a_2,...,a_n\}$，令$B=\sum_{a\in A}S(a)$，以此构建区间排工问题实例。
 

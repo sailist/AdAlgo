@@ -20,7 +20,7 @@ $$\left(v_{i[1]}, v_{i[2]}\right),\left(v_{i[2]}, v_{i[3]}\right) ,\left(v_{i[3]
 
 该问题可以通过[X3C问题](x3c.html)归约证明。
 
-# NPC 证明
+## NPC 证明
 
 令 X3C 问题实例为布尔变量集合 $S,|S|=3q$ 和项集合 $C,c_i={x_i,y_i,z_i},|C|=n$，以此构建划分三角形实例。
 

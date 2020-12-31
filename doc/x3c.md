@@ -12,8 +12,8 @@
 
 
 
-# NPC 证明
-该问题的证明非常容易，因为 3DM 问题中的每个实例，都可以看成是 X3C 问题的实例。
+## NPC 证明
+该问题的证明非常容易，因为 [3DM](3dm.html) 问题中的每个实例，都可以看成是 X3C 问题的实例。
 
 对 3DM 实例 $W,X,Y,M \subseteq W \times X \times Y$，构造 X3C 实例为 $S=W\cup X\cup Y, C=M$。
 

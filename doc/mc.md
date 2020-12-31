@@ -7,12 +7,12 @@
 **询问：** 是否存在 $C$ 的子集 $C'$，使 $\left|C^{\prime}\right| \leq k, k \in Z^{+}, \quad U_{c_{i} \in C^{\prime}} c_{i}=S$
 
 
-# 证明
+## NPC 证明
 
 对 MC 问题添加以下约束，令：
 
  - $C_i\in C, |C_i|=3$
  - $|S|=3q, K=q$ 
  
-经过上述限制后，该问题变成X3C了。
+经过上述限制后，该问题变成 [X3C](x3c.html) 问题了。
 
