@@ -29,8 +29,9 @@
  - [图灵机](./turing/1.html)
    - [确定型图灵机与非确定性图灵机](./turing/2.html)
    - [ ] [神谕图灵机](./turing/3.html)
+ - [ ] [问题形式](./turing/prob.html)
  - [P/NP/NPC](./turing/4.html)
- - [ ] 多项式归约和图灵归约
+ - [ ] [多项式归约和图灵归约](turing/5.html)
 ## NPC 问题证明（按照归约顺序排序）
 
  - [SAT（布尔可满足性问题，Cook定理）](doc/sat.html)

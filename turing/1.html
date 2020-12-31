@@ -34,9 +34,7 @@
 <h2 id="停机">停机</h2>
 <p>考虑图灵机在什么情况下停机。一般编写程序，其退出的原因有两个：执行成功、产生错误。这同样适用于图灵机。当图灵机启动时，通过输入不断的更改自己的下一个状态，永不停歇，直到状态切换到了停机状态。</p>
 <p>一般而言，分别为“执行成功”、“产生错误”两个概念定义停机的状态集，一般分别称其为<strong>接受状态集</strong>和<strong>拒绝状态集</strong>，他们都是一个图灵机的状态集合的子集，当处于这两个集合之外的状态时，图灵机不会停止运行。</p>
-<h2 id="问题">问题</h2>
-<p>一般而言，</p>
-<p>我们可以构造出一组输入集、输出集、状态转移函数来求解特定的问题，当定义好求解一类问题的图灵机时，问题的实例 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span></span></span></span> 就可以以纸带的形式放到图灵机上，随后根据图灵机的一系列状态转移、输出，最终停机。</p>
+<p>我们可以构造出一组输入集、输出集、状态转移函数来求解特定的问题，当定义求解一类问题的图灵机时，定义问题的实例为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span></span></span></span> ，那么 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span></span></span></span> 就可以以纸带的形式放到图灵机上，随后根据图灵机的一系列状态转移、输出，最终停机。</p>
 <!-- 实际上，虽然图灵机已经是一种对求解算法问题的抽象描述了，但实际上完全可以抛开这些概念，把图灵机直接看成是一个函数：根据输入，得到输出。 -->
 
     </body>
