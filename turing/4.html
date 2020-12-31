@@ -5,7 +5,8 @@
         <title>P&lpar;polynominal&comma; &#x591A;&#x9879;&#x5F0F;&rpar;</title>
         <style>
 </style>
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
@@ -19,7 +20,7 @@
 .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
 </style>
         
-        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
         
     </head>
     <body class="vscode-body vscode-light">
@@ -37,11 +38,23 @@
 <p>如果这个终极的问题存在，那么这个终极问题就被称为是 NPC，能归约到该问题上的其他问题被称为NPC类问题。</p>
 <p>现在，只剩下一个问题了，就是是否存在 NPC 类问题？</p>
 <p>1970年 <a href="../doc/sat.html">Cook</a> 证明了第一个 NPC 问题。</p>
-<h1 id="强-npc-类问题">强 NPC 类问题</h1>
+<h2 id="强-npc-类问题">强 NPC 类问题</h2>
+<p>存在一些 NPC 问题，当问题中的<strong>某个数值参数固定或存在上限时</strong>，该问题可以被一个<strong>多项式时间算法</strong>验证，这类问题在 NPC 问题中相对更加简单（没有名字，或许可以起名叫做 NP-easy），解决的多项式时间算法叫<strong>伪（pseudo）多项式时间算法</strong>。</p>
+<p>而在 NPC 类问题中，除去上面描述的存在伪多项式时间算法的 NPC 类问题后，剩下问题就属于强 NPC 类问题。强 NPC 类问题一定不存在伪多项式时间算法。</p>
+<blockquote>
+<p>一个例子是<a href="../doc/par.html">划分问题</a>的动态规划算法，可以参考书中 P124 了解。</p>
+</blockquote>
 <h1 id="np-难问题">NP 难问题</h1>
+<p>NP困难（NP-hard）难在<strong>不一定</strong>在多项式时间内<strong>被验证正确性</strong>，即使NP完全问题有多项式时间的解（P=NP），NP困难问题依然可能没有多项式时间的解。因此NP困难问题 “<strong>至少与NP完全问题一样难</strong>” 。</p>
+<blockquote>
+<p>因此， NPC 问题也可以看做是 NP-hard，其属于 NP-hard 的子集。</p>
+</blockquote>
+<p>当 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>≠</mo><mi>N</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P\not=NP</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span></span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span> 时，NP问题和 NP-hard 的交集就是 NPC 问题；当 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mi>N</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P=NP</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span> 时，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mi>N</mi><mi>P</mi><mo>=</mo><mi>N</mi><mi>P</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">P=NP=NPC</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>，如下图所示：</p>
+<p><img src="fig/2.png" alt=""></p>
 <h1 id="reference">Reference</h1>
 <ul>
 <li><a href="https://zhuanlan.zhihu.com/p/73953567">https://zhuanlan.zhihu.com/p/73953567</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/NP%E5%9B%B0%E9%9A%BE">https://zh.wikipedia.org/wiki/NP困难</a></li>
 </ul>
 
     </body>
