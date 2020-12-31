@@ -20,7 +20,7 @@
    - [归并算法](https://sailist.github.io/AdAlgo/doc/1.html)
  - [ ] 贪心
  - [ ] 动规
-   - [ ] [划分问题]
+   - 划分问题
  - [ ] 回溯
  - [ ] 局搜
 
@@ -50,12 +50,12 @@
        - [子图同构问题](doc/sgi.html)
        - [最小迟序排工问题](doc/mds.html)
  - [ ] [HC（哈密顿回路问题）](doc/hc.html)
-   - [ ] [TSP（货郎问题）](doc/tsp.html)
+   - [TSP（货郎问题）](doc/tsp.html)
  - [划分问题](doc/par.html)
    - [广义划分问题归约](doc/2.html)
-   - [ ] 背包问题
+   - [背包问题](doc/knapsack.html)
+   - [多任务排工问题](doc/mts.html)
    - [区间排工问题](doc/swi.html)
- - [ ] 多任务排工问题
 
 
 ## NPC 问题证明（按照证明方法排序）
@@ -97,8 +97,10 @@
    - [ ] [平面图三着色](doc/pgcp.html)
 
 ## 近似算法
+ - [ ] [近似算法基础]()
  - [ ] 装箱问题 
- - [MST-MM](https://sailist.github.io/AdAlgo/doc/4.html)
+ - [MST-MM](approx/mstmm.html)
+
 
 
 
@@ -108,4 +110,5 @@
 山软智库（Sharing Ideas）公众号，中国第一个学生智库，诞生于山东大学。我们努力研发最适合大学生的线上学习内容，平台，科技和品牌，只为通过这些媒介，表达我们对你和这个世界，最诚实美好的善意。
 
 ![](./fig/sharingidea.png)
+
 
