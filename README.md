@@ -4,6 +4,7 @@
 
  - 2021年1月1日：补充了归并排序复杂度证明 $N$ 为奇数时的讨论，补充了假设法证明复杂度的方法
  - fix issue [#3](https://github.com/sailist/AdAlgo/issues/3)
+ - fix issue [#4](https://github.com/sailist/AdAlgo/issues/4)
 
 
 # 高级算法
