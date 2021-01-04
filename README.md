@@ -3,9 +3,10 @@
 该部份 7 天后删除
 
  - 2021年1月1日：补充了归并排序复杂度证明 $N$ 为奇数时的讨论，补充了假设法证明复杂度的方法
- - fix issue [#3](https://github.com/sailist/AdAlgo/issues/3)
- - fix issue [#4](https://github.com/sailist/AdAlgo/issues/4)
- - fix issue [#5](https://github.com/sailist/AdAlgo/issues/5)
+ - fix issue [#3](https://github.com/sailist/AdAlgo/issues/3)：图灵归约
+ - fix issue [#4](https://github.com/sailist/AdAlgo/issues/4)：X3C-Y
+ - fix issue [#5](https://github.com/sailist/AdAlgo/issues/5):X3C-Y
+ - fix issue [#6](https://github.com/sailist/AdAlgo/issues/6)：VC
 
 
 # 高级算法
