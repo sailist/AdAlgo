@@ -6,7 +6,7 @@
 
 **询问：** 是否存在子集 $A^{\prime} \subseteq A$，使得 
 
-$$\sum_{a \in a^{\prime}} S(a)=\sum_{a \in A-A^{\prime}} S(a)$$
+$$\sum_{a \in A^{\prime}} S(a)=\sum_{a \in A-A^{\prime}} S(a)$$
 
 
 ## 核心思路
