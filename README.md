@@ -5,7 +5,7 @@
  - 2021年1月1日：补充了归并排序复杂度证明 $N$ 为奇数时的讨论，补充了假设法证明复杂度的方法
  - fix issue [#3](https://github.com/sailist/AdAlgo/issues/3)：图灵归约
  - fix issue [#4](https://github.com/sailist/AdAlgo/issues/4)：X3C-Y
- - fix issue [#5](https://github.com/sailist/AdAlgo/issues/5):X3C-Y
+ - fix issue [#5](https://github.com/sailist/AdAlgo/issues/5)：X3C-Y
  - fix issue [#6](https://github.com/sailist/AdAlgo/issues/6)：VC
 
 
@@ -94,7 +94,7 @@
 
 ## NPC 问题证明（按照证明难度排序）
 
-以下为分级后的题目难度，可能略有出入：
+以下为分级后的题目难度，可能略有出入，建议掌握所有**2分及以下**的题目，同时了解所有分数题目的实例形式：
 
  - 0分
    - [X3C](doc/x3c.html)
