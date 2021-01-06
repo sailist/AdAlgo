@@ -7,13 +7,12 @@
  - fix issue [#4](https://github.com/sailist/AdAlgo/issues/4)：X3C-Y
  - fix issue [#5](https://github.com/sailist/AdAlgo/issues/5)：X3C-Y
  - fix issue [#6](https://github.com/sailist/AdAlgo/issues/6)：VC
+ - 2021年1月6日：更新了一个简单的 X3C-Y 示例
 
 
 # 高级算法
 
 点此进入：[学习链接](https://sailist.github.io/AdAlgo/)（下方link因为部署需要无法直接查看）
-
-
 
 
 ## 图论/离散基础
@@ -157,3 +156,4 @@
 # Contributor
 
  - [Kaiyi](https://github.com/Kaiyiwing)
+ - [Contributor List](https://github.com/sailist/AdAlgo/graphs/contributors)
