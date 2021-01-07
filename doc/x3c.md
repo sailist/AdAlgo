@@ -19,3 +19,6 @@
 
 3DM 实例 M 中存在完美对集，当且仅当 X3C 实例 C 中存在 S 的严格覆盖。问题得证。
 
+
+> PS: [issue#7](https://github.com/sailist/AdAlgo/issues/7) 如果 X3C 存在严格覆盖，只需要把严格覆盖的所有元素的第一个分量放到 W，第二个分量放到 X，第三个分量放到 Y 即可
+
