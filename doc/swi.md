@@ -22,7 +22,7 @@ $\sigma(t)+L(t) \leqslant \sigma\left(t^{\prime}\right)$
 
 将每一个划分问题实例中的元素都转换为区间排工问题中的一个任务，且最早开始时间 $r(t)$ 均为0，最晚结束时间 $d(t)$ 均为 $B+1$，任务长度$L(t)=S(a)$
 
-之后，再额外构建一个新元素 $\bar{t}$，要求 $r(\bar{t})=\left[\frac{B}{2}\right\rceil, d(\bar{t})=\left[\frac{B+1}{2}\right\rceil$ 及 $L(\bar{t})=1$
+之后，再额外构建一个新元素 $\bar{t}$，要求 $r(\bar{t})=\left\lceil\frac{B}{2}\right\rceil, d(\bar{t})=\left\lceil\frac{B+1}{2}\right\rceil$ 及 $L(\bar{t})=1$
 
 该变换**显然可在多项式时间**内完成。
 
