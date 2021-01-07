@@ -29,8 +29,40 @@
 <p><strong>实例：</strong> 无向简单图 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mo stretchy="false">(</mo><mi>V</mi><mo separator="true">,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">G=(V,E)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span>，其中 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mo stretchy="false">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>v</mi><mn>2</mn></msub><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo separator="true">,</mo><msub><mi>v</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">V=\{v_1,v_2,...,v_n\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">.</span><span class="mord">.</span><span class="mord">.</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span>。</p>
 <p><strong>询问：</strong> 图 G 中是否存在一条哈密顿回路。</p>
 <p>该问题的证明思路是通过<a href="./vc.html">顶点覆盖问题</a>归约证明。</p>
+<h2 id="核心思路">核心思路</h2>
+<p>直接想太难了，从已知来推未知更容易理解一些。</p>
+<p>下图为一个顶点覆盖图，红色的点是顶点覆盖集。
+<img src="fig/21.png" alt=""></p>
+<p>按照下面的步骤先把路径走一遍，先不用管合理性。</p>
+<p><img src="fig/22.png" alt=""></p>
+<p>步骤是这样的，先走黑色的箭头，然后顺着黄色的箭头转到下一个序号的黑色箭头，<strong>遍历完</strong>定点覆盖点集的第一个点的所有边，然后顺着蓝色的箭头“瞬移”到第二个点。</p>
+<p><img src="fig/23.png" alt=""></p>
+<p>按照相同的步骤，顺着黑色-黄色的顺序遍历完全部的和第二个点相连的边，然后顺着蓝色的箭头“瞬移”到第三个点。</p>
+<p><img src="fig/24.png" alt=""></p>
+<p>同上，顺着黑黄的顺序遍历与第三个点相连的边。</p>
+<p>观察上面的过程，可以发现几点。</p>
+<ul>
+<li>这一过程中，黄色的箭头和蓝色的箭头，他们的边在图上是没有的，是被想象构建出来的。</li>
+<li>点可能被重复覆盖了多次，但所有的实际的黑色的边，只走了一次或两次。</li>
+</ul>
+<p>那下面就可以通过特殊的构造，将想象出的黄线和蓝线“合法化”。</p>
+<p>首先，将所有的边换成下面这种图，叫做检测覆盖子图（也叫梯子图）：</p>
+<p><img src="fig/2.png" alt=""></p>
+<p>会发现该类图存在一些特殊的和遍历相关性质。如果要<strong>穿过子图所有的点将该图走一遍</strong>，且只能<strong>从序号为1的点开始</strong>，<strong>从序号为6的点结束</strong>的话，那么走一遍的话只有两种走法，即下图 (a),(b)；走两遍的话只有一种走法，即下图(c)（分别走两边）。
+<img src="fig/3.png" alt=""></p>
+<p>之后，将于每个点相关联的边对应的检测子图上，按顺序穿起来（相邻的两个子图的起点和终点之间加一条边，最后一个子图的终点和第一个子图的起点之间加一条边），如下图：</p>
+<p><img src="fig/4.png" alt=""></p>
+<p>随后，再在 K 个顶点之间，加一条边。</p>
+<p>这样就完成了上面想象中的那种走法。一一对比，可以发现：</p>
+<ul>
+<li>如果遍历时相邻的点不在覆盖集合中，那么只需要走一次，相应的检测覆盖子图按照(a)/(b)的走法来到相邻的下一个检测覆盖子图，直到完成后回到起点。</li>
+<li>如果遍历时相邻的点也在覆盖集合中，那么这条边肯定需要，且最多遍历两次，那么相应的检测覆盖子图按照(c)的走法来到相邻的下一个检测覆盖子图上，直到完成后回到起点。</li>
+</ul>
+<p>由此，如果存在顶点覆盖，则可以在检测覆盖子图和在其上附加的边中找一条哈密顿回路，反之同理。</p>
+<blockquote>
+<p>直觉告诉我似乎漏了什么情况，但核心意图是这样子的，仅供理解。如果有问题或者确实没问题，欢迎 issue / pr 告知</p>
+</blockquote>
 <h2 id="npc-证明">NPC 证明</h2>
-<!-- 变换为 HC 问题，将 VC 中的每一条边，对应成一个特殊的图，该图定义了四个特殊点，。 -->
 <p>暂略</p>
 
     </body>

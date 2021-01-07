@@ -54,7 +54,7 @@
        - [团问题](doc/clique.html)
          - [子图同构问题](doc/sgi.html)
          - [最小迟序排工问题](doc/mds.html)
- - [ ] [HC（哈密顿回路问题）](doc/hc.html)
+ - [x] [HC（哈密顿回路问题）](doc/hc.html)
    - [TSP（货郎问题）](doc/tsp.html)
  - [划分问题](doc/par.html)
    - [广义划分问题归约](doc/2.html)
@@ -104,11 +104,11 @@
    - [划分问题](doc/par.html)
    - [*顶点度不超过4的图的三着色](doc/4gcp.html)
    - [ ] [*平面图三着色](doc/pgcp.html)
+   - [x] [HC（哈密顿回路问题）](doc/hc.html)
  - 4分
    - [3SAT](doc/3sat.html)
    - [x] [SAT（布尔可满足性问题，Cook定理）](doc/sat.html)
    - [ ] [3DM（三对集问题）](doc/3dm.html)
-   - [ ] [HC（哈密顿回路问题）](doc/hc.html)
  - 5分
    - ...
 
