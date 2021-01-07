@@ -1,15 +1,3 @@
-# 更新日志
-
-该部份 7 天后删除
-
- - 2021年1月1日：补充了归并排序复杂度证明 $N$ 为奇数时的讨论，补充了假设法证明复杂度的方法
- - fix issue [#3](https://github.com/sailist/AdAlgo/issues/3)：图灵归约
- - fix issue [#4](https://github.com/sailist/AdAlgo/issues/4)：X3C-Y
- - fix issue [#5](https://github.com/sailist/AdAlgo/issues/5)：X3C-Y
- - fix issue [#6](https://github.com/sailist/AdAlgo/issues/6)：VC
- - 2021年1月6日：更新了一个简单的 X3C-Y 示例
-
-
 # 高级算法
 
 点此进入：[学习链接](https://sailist.github.io/AdAlgo/)（下方link因为部署需要无法直接查看）
@@ -112,12 +100,12 @@
    - [TSP（货郎问题）](doc/tsp.html)
  - 3分
    - [划分三角形问题](doc/partri.html)
-   - [3SAT](doc/3sat.html)
    - [x] [VC（顶点覆盖问题）](doc/vc.html)
    - [划分问题](doc/par.html)
    - [*顶点度不超过4的图的三着色](doc/4gcp.html)
    - [ ] [*平面图三着色](doc/pgcp.html)
  - 4分
+   - [3SAT](doc/3sat.html)
    - [x] [SAT（布尔可满足性问题，Cook定理）](doc/sat.html)
    - [ ] [3DM（三对集问题）](doc/3dm.html)
    - [ ] [HC（哈密顿回路问题）](doc/hc.html)
